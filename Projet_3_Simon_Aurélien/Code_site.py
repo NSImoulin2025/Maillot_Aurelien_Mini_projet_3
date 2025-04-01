@@ -48,7 +48,7 @@ class Jeu_du_simon:
 
     def get_sequence(self):
         """
-        Retourne la séquence actuelle du jeu.
+        Renvoie la séquence actuelle du jeu.
 
         Returns:
             list: La séquence actuelle.
@@ -57,7 +57,7 @@ class Jeu_du_simon:
 
     def get_score(self):
         """
-        Retourne le score actuel du joueur.
+        Renvoie le score actuel du joueur.
 
         Returns:
             int: Le score actuel.
