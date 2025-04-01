@@ -15,7 +15,7 @@ def index():
 def new_sequence():
     """
     Démarre une nouvelle partie en réinitialisant la séquence et le score.
-    Retourne la nouvelle séquence générée.
+    Renvoie la nouvelle séquence générée.
     """
     Jeu.debut()
     return jsonify(sequence=Jeu.get_sequence())
@@ -24,7 +24,7 @@ def new_sequence():
 def check_input():
     """
     Vérifie si la séquence fournie par l'utilisateur correspond à la séquence du jeu.
-    Retourne un succès ou une erreur en cas de séquence incorrecte.
+    Renvoie un succès ou une erreur en cas de séquence incorrecte.
     """
     data = request.get_json()
     if not data or "sequence" not in data:
@@ -40,7 +40,7 @@ def check_input():
 @app.route('/get_score', methods=['GET'])
 def get_score():
     """
-    Retourne le score actuel du joueur.
+    Renvoie le score actuel du joueur.
     """
     return jsonify(score=Jeu.get_score())
 
@@ -48,7 +48,7 @@ def get_score():
 def play_turn():
     """
     Gère un tour de jeu en vérifiant la séquence utilisateur.
-    Retourne le résultat (succès ou échec), la séquence complète et le score.
+    Renvoie le résultat (succès ou échec), la séquence complète et le score.
     """
     data = request.get_json()
     if not data or "sequence" not in data:
