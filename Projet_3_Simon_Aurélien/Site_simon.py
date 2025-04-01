@@ -9,7 +9,7 @@ def index():
     """
     Route principale qui rend la page HTML du jeu.
     """
-    return render_template('html.html')
+    return render_template('page.html')
 
 @app.route('/new_sequence', methods=['POST'])
 def new_sequence():
