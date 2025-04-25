@@ -1,8 +1,8 @@
 """
 Les erreurs ont été générées par intelligence artificielle
 """
-from flask import Flask, render_template, jsonify, request
 from Code_site import Jeu_du_simon
+from flask import Flask, render_template, jsonify, request
 
 app = Flask(__name__)
 Jeu = Jeu_du_simon()
