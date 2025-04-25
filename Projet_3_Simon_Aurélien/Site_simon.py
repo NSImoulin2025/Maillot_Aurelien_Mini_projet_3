@@ -1,3 +1,6 @@
+"""
+Les erreurs ont été générées par intelligence artificielle
+"""
 from flask import Flask, render_template, jsonify, request
 from Code_site import Jeu_du_simon
 
@@ -24,7 +27,7 @@ def new_sequence():
 def check_input():
     """
     Vérifie si la séquence fournie par l'utilisateur correspond à la séquence du jeu.
-    Renvoie un succès ou une erreur en cas de séquence incorrecte. (Partie erreur 500 générer par inteligence artificielle)
+    Renvoie un succès ou une erreur en cas de séquence incorrecte.
     """
     data = request.get_json()
     if not data or "sequence" not in data:
