@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             /**
              * Gère les clics sur les boutons de couleur.
              * Vérifie la séquence utilisateur et envoie les données au serveur.
+             * Aide par intelligence artificielle.
              */
             const clickedButton = event.target;
             clickedButton.classList.add("active");
